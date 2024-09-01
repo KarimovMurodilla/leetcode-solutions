@@ -1,6 +1,6 @@
 ## Linked lists:
 1. https://leetcode.com/problems/merge-k-sorted-lists/
-2. https://leetcode.com/problems/linked-list-cycle/
+2. https://leetcode.com/problems/linked-list-cycle/ - ✅
 3. https://leetcode.com/problems/add-two-numbers/
 4. https://leetcode.com/problems/reverse-linked-list/
 
