@@ -6,11 +6,11 @@
 
 
 ## Hash table:
-1. https://leetcode.com/problems/single-number/ — решить за O (1) по памяти
-2. https://leetcode.com/problems/two-sum/
+1. https://leetcode.com/problems/single-number/ — решить за O (1) по памяти - ✅
+2. https://leetcode.com/problems/two-sum/ - ✅
 3. https://leetcode.com/problems/4sum/
 4. https://leetcode.com/problems/group-anagrams/
-5. https://leetcode.com/problems/valid-anagram/
+5. https://leetcode.com/problems/valid-anagram/ - ✅
 6. https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
 
