@@ -24,8 +24,8 @@
 
 
 ## Tree:
-1. https://leetcode.com/problems/same-tree/
-2. https://leetcode.com/problems/symmetric-tree/
+1. https://leetcode.com/problems/same-tree/ - ✅
+2. https://leetcode.com/problems/symmetric-tree/ - ✅
 3. https://leetcode.com/problems/balanced-binary-tree/
 4. https://leetcode.com/problems/path-sum-ii/
 
@@ -40,7 +40,7 @@
 
 
 ## Queue/stack:
-1. https://leetcode.com/problems/valid-parentheses/
+1. https://leetcode.com/problems/valid-parentheses/ - ✅
 
 
 ## Dfs/bfs:
