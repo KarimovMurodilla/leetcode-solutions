@@ -27,7 +27,8 @@
 1. https://leetcode.com/problems/same-tree/ - ✅
 2. https://leetcode.com/problems/symmetric-tree/ - ✅
 3. https://leetcode.com/problems/balanced-binary-tree/ - ✅
-4. https://leetcode.com/problems/path-sum-ii/
+4. https://leetcode.com/problems/path-sum/
+5. https://leetcode.com/problems/path-sum-ii/
 
 
 ## Binary search:
