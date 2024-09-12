@@ -7,34 +7,32 @@ class TreeNode:
         self.left = left
         self.right = right
 
-    
 class Solution:
     def __init__(self):
         self.sums = []
 
-    def path_sum(self, root: Optional[TreeNode]):
+    def hasPathSum(self, root: Optional[TreeNode], target: int):
         if not root:
-            print(root)
-            return 0
+            return False
         
-        max_left_path = self.path_sum(root.left)
-        max_right_path = self.path_sum(root.right)
-        self.sums.append(max_left_path + root.val)
-        self.sums.append(max_right_path + root.val)
-        return max(max_left_path, max_right_path) + root.val
-    
-    def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
-        self.path_sum(root)
-        return targetSum in self.sums
+        target -= root.val
+
+        # Leaf of the tree
+        if not root.left and not root.right:
+            return target == 0
+        
+        return (self.hasPathSum(root.left, target) or self.hasPathSum(root.right, target))
     
 
 root = TreeNode(1)
 root.left = TreeNode(2)
-root.right = TreeNode(2)
+# # root.right = TreeNode(2)
 root.left.left = TreeNode(3)
-root.right.right = TreeNode(3)
-root.left.left.left = TreeNode(4)
-root.right.right.right = TreeNode(4)
+root.left.left.right = TreeNode(4)
+
+# root.right.right = TreeNode(3)
+# root.left.left.left = TreeNode(4)
+# root.right.right.right = TreeNode(8)
 
 sol = Solution()
 res = sol.hasPathSum(root, 10)
