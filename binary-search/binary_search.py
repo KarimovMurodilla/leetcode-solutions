@@ -7,9 +7,7 @@ class Solution:
 
         while left <= right:
             middle = (left + right) // 2
-            print("middle:", middle)
-            print("left:", left)
-            print("right:", right)
+            
             if nums[middle] == target:
                 return middle
             
