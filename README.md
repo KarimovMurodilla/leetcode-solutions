@@ -35,7 +35,7 @@
 1. https://leetcode.com/problems/binary-search/ - ✅
 2. https://leetcode.com/problems/guess-number-higher-or-lower/ - ✅
 3. https://leetcode.com/problems/search-a-2d-matrix/ - ✅
-4. https://leetcode.com/problems/search-in-rotated-sorted-array/
+4. https://leetcode.com/problems/search-in-rotated-sorted-array/ - ✅
 5. https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 6. https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
 
