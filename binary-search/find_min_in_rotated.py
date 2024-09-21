@@ -14,7 +14,7 @@ class Solution:
             if(nums[mid] >= nums[left]):
                 ans=min(ans, nums[left])
                 left=mid+1
-
+            
             else:
                 ans=min(ans, nums[mid])
                 right=mid-1

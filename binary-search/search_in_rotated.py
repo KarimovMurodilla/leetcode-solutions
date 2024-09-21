@@ -1,7 +1,23 @@
 from typing import List
 
-class Solution:
-    def binary_search(self, nums: List[int], target: int):
+"""
+Base
+1. if target == mid. success
+
+Left portion (left <= mid)
+1. if target > mid. go to right 
+2. if target < mid and target < left. go to right 
+3. if target >= left. go to left
+
+Right portion
+1. if target < mid. go to left
+2. if target > mid and target > right. go to left
+3. if target > mid and target < right. go to right 
+"""
+
+
+class Solution:   
+    def search(self, nums: List[int], target: int) -> int:
         left = 0
         right = len(nums) - 1
 
@@ -11,37 +27,25 @@ class Solution:
             if nums[mid] == target:
                 return mid
             
-            elif nums[mid] > target:
-                right = mid - 1
+            # Left portion
+            if nums[left] <= nums[mid]:
+                if target > nums[mid]:
+                    left = mid + 1
+                elif target < nums[mid] and target < nums[left]:
+                    left = mid + 1
+                else:
+                    right = mid - 1
             
+            # Right portion
             else:
-                left = mid + 1
+                if target < nums[mid]:
+                    right = mid - 1
+                elif target > nums[mid] and target > nums[right]:
+                    right = mid - 1
+                else:
+                    left = mid + 1
 
         return -1
-
-    def search(self, nums: List[int], target: int) -> int:
-        last_val = -10001
-        rotated_index = 0
-
-        for i in range(len(nums)):
-            if nums[i] < last_val:
-                rotated_index = i
-                break
-            last_val = nums[i]
-
-        if rotated_index == 0:
-            return self.binary_search(nums, target)
-        
-        else:
-            left = self.binary_search(nums[rotated_index:], target)
-            right = self.binary_search(nums[:rotated_index], target)
-
-            if left == -1 and right == -1:
-                return -1
-            elif left != -1:
-                return len(nums[:rotated_index]) + left
-            else:
-                return right
 
 
 nums = [4,5,6,7,0,1,2]
