@@ -61,7 +61,7 @@
 
 
 ## Greedy problems:
-1. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+1. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ - ✅
 2. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 3. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
 
