@@ -51,7 +51,7 @@
 
 ## Heap/hash:
 1. https://leetcode.com/problems/top-k-frequent-words/ - ✅
-2. https://leetcode.com/problems/top-k-frequent-elements/
+2. https://leetcode.com/problems/top-k-frequent-elements/ - ✅
 
 
 ## Sliding window:
