@@ -56,7 +56,7 @@
 
 ## Sliding window:
 1. https://leetcode.com/problems/sliding-window-median/
-2. https://leetcode.com/problems/sliding-window-maximum/
+2. https://leetcode.com/problems/sliding-window-maximum/ - ✅
 3. https://leetcode.com/problems/longest-repeating-character-replacement/
 
 
