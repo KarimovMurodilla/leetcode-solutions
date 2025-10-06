@@ -1,7 +1,3 @@
-from copy import copy
-from typing import List
-
-
 class Solution:
     def isLongPressedName(self, name: str, typed: str) -> bool:
         a = b = 0
@@ -30,24 +26,27 @@ print(res)
 
 
 """
-saeed
-  |
-
-
-ssaaeedd
+alex
     |
+
+
+aaleexeex
+      |
 
 
 a = b = 0
 
-if name[a] == typed[b]:
-    a += 1
-    b += 1
+while b < len(typed):
+    if a < len(name) and name[a] == typed[b]:
+        a += 1
+        b += 1
 
-elif typed[b] == typed[b-1]:
-    b += 1
+    elif b > 0 and typed[b] == typed[b-1]:
+        b += 1
 
-else:
-    return False
+    else:
+        return False
+
+return a == len(name)
 
 """
