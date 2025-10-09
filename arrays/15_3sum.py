@@ -35,7 +35,9 @@ class Solution:
         return result
 
  
-nums = [-1,0,1,2,-1,-4]
+# nums = [-1,0,1,2,-1,-4]
+nums = [-2, 0, 0, 2, 2]
+
 s = Solution()
 res = s.threeSum(nums)
 print(res)
